@@ -64,11 +64,31 @@
   var contactForm = document.getElementById('contactForm');
   var sentPanel = document.getElementById('sentPanel');
   var resetBtn = document.getElementById('resetBtn');
+  var formError = document.getElementById('formError');
+  var submitBtn = contactForm.querySelector('.form-submit');
 
   contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    contactForm.hidden = true;
-    sentPanel.hidden = false;
+    formError.hidden = true;
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Envoi...';
+    fetch(contactForm.action, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: { 'Accept': 'application/json' }
+    }).then(function (res) {
+      if (res.ok) {
+        contactForm.hidden = true;
+        sentPanel.hidden = false;
+      } else {
+        formError.hidden = false;
+      }
+    }).catch(function () {
+      formError.hidden = false;
+    }).finally(function () {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Envoyer →';
+    });
   });
 
   resetBtn.addEventListener('click', function () {

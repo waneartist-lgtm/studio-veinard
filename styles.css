@@ -210,6 +210,8 @@ section[data-screen="home"]{position:relative;height:calc(100dvh - var(--navH,76
 .contact-form input:focus,.contact-form textarea:focus{border-color:var(--acc)}
 .contact-form textarea{resize:vertical}
 .form-submit{margin-top:4px;width:100%;padding:15px;font-size:14px}
+.form-submit:disabled{opacity:.6;cursor:default}
+.form-error{margin-top:10px;color:#ff6b5e;font-size:13px}
 
 .footer-bar{
   margin-top:46px;border-top:1px solid var(--line);padding-top:16px;display:flex;flex-wrap:wrap;

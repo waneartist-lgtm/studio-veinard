@@ -186,13 +186,13 @@
           <p class="sent-text">Merci, je te réponds vite. On va faire quelque chose de marquant.</p>
           <button id="resetBtn" class="reset-btn">Nouveau message</button>
         </div>
-        <!-- TODO: replace REPLACE_ME with real Formspree endpoint -->
-        <form id="contactForm" class="contact-form" action="https://formspree.io/f/REPLACE_ME" method="POST">
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/meebrqlq" method="POST">
           <div class="form-heading">Mini-brief</div>
           <input name="name" type="text" placeholder="Ton nom" required>
           <input name="email" type="email" placeholder="Ton email" required>
           <textarea name="message" placeholder="Ton projet en deux lignes" rows="4" required></textarea>
           <button type="submit" class="btn-primary form-submit">Envoyer →</button>
+          <p id="formError" class="form-error" hidden>Un souci est survenu, réessaie ou écris directement à contact@veinard.pro.</p>
         </form>
       </div>
     </div>
