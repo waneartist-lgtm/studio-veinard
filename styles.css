@@ -184,14 +184,6 @@ section[data-screen="home"]{position:relative;height:calc(100dvh - var(--navH,76
 .contact-value{font-family:'Anton',sans-serif;font-size:clamp(22px,6vw,34px);text-transform:none;word-break:break-word}
 .contact-info a[href^="tel"] .contact-value{text-transform:none}
 
-.social-row{display:flex;flex-wrap:wrap;gap:10px}
-.social-btn{
-  text-decoration:none;font-family:'Saira',sans-serif;font-weight:700;font-size:13px;letter-spacing:.04em;
-  text-transform:uppercase;color:#f2f3ef;border:1px solid var(--line);padding:10px 16px;
-  clip-path:polygon(0 0,100% 0,100% 100%,12px 100%,0 calc(100% - 12px));transition:color .15s ease,border-color .15s ease;
-}
-.social-btn:hover{border-color:var(--acc);color:var(--acc)}
-
 .contact-form-wrap{flex:1 1 340px;min-width:280px}
 .sent-panel{border:1px solid var(--acc);background:rgba(227,255,58,.06);padding:34px 26px;clip-path:polygon(0 0,100% 0,100% 100%,22px 100%,0 calc(100% - 22px))}
 .sent-title{font-family:'Anton',sans-serif;font-size:34px;text-transform:uppercase;color:var(--acc)}

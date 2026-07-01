@@ -14,8 +14,22 @@
       l.classList.toggle('active', l.dataset.tab === tab);
     });
     mobileMenu.hidden = true;
+    turnSoundOff();
     playWipe();
     window.scrollTo(0, 0);
+  }
+
+  var soundBtn = document.getElementById('soundBtn');
+  var reel = document.getElementById('vnd-reel');
+  var soundOn = false;
+  function turnSoundOff() {
+    if (!soundOn) return;
+    soundOn = false;
+    soundBtn.textContent = '✕ Son off';
+    if (reel && reel.contentWindow) {
+      reel.contentWindow.postMessage(JSON.stringify({ method: 'setMuted', value: true }), '*');
+      reel.contentWindow.postMessage(JSON.stringify({ method: 'setVolume', value: 0 }), '*');
+    }
   }
 
   function playWipe() {
@@ -38,9 +52,6 @@
   showScreen('home');
   wipe.hidden = true;
 
-  var soundBtn = document.getElementById('soundBtn');
-  var reel = document.getElementById('vnd-reel');
-  var soundOn = false;
   soundBtn.addEventListener('click', function () {
     soundOn = !soundOn;
     soundBtn.textContent = soundOn ? '♪ Son on' : '✕ Son off';
