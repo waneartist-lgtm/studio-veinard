@@ -1,5 +1,6 @@
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
+[hidden]{display:none!important}
 body{background:#1a1a1a;color:#f2f3ef;font-family:'Saira',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 button{font-family:inherit}
 ::selection{background:#e3ff3a;color:#0a0b0d}
