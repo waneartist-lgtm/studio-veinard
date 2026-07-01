@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio Veinard — Studio de création visuelle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Saira:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="root">
+
+  <div aria-hidden="true" class="grain-distress"></div>
+  <div aria-hidden="true" class="grain-fine"></div>
+
+  <div id="wipe" class="wipe" hidden></div>
+
+  <!-- ===== NAV ===== -->
+  <nav id="nav">
+    <button class="logo-btn" data-go="home" aria-label="Studio Veinard — accueil"><img src="uploads/LogoFull.png" alt="Studio Veinard" class="logo-img"></button>
+
+    <div class="nav-links" id="navLinksDesktop">
+      <button class="nav-link" data-go="home" data-tab="home">
+        <span>Home</span>
+        <span class="nav-underline"></span>
+      </button>
+      <button class="nav-link" data-go="studio" data-tab="studio">
+        <span>Studio</span>
+        <span class="nav-underline"></span>
+      </button>
+      <button class="nav-link" data-go="services" data-tab="services">
+        <span>Services</span>
+        <span class="nav-underline"></span>
+      </button>
+    </div>
+    <button class="cta-btn" data-go="contact">On s'y met ? →</button>
+
+    <button id="hamburger" class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <button class="mobile-link" data-go="home">Home</button>
+      <button class="mobile-link" data-go="studio">Studio</button>
+      <button class="mobile-link" data-go="services">Services</button>
+      <button class="cta-btn mobile-cta" data-go="contact">On s'y met ? →</button>
+    </div>
+  </nav>
+
+  <!-- ===== HOME ===== -->
+  <section data-screen="home" class="screen">
+    <div class="reel-wrap">
+      <iframe id="vnd-reel" title="Showreel Studio Veinard" src="https://player.vimeo.com/video/1205680422?autoplay=1&muted=1&loop=1&controls=0&title=0&byline=0&portrait=0&autopause=0&playsinline=1&badge=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" class="reel-iframe"></iframe>
+      <div class="scanline" id="scanline"></div>
+      <div class="reel-vignette"></div>
+    </div>
+
+    <div class="hud">
+      <div class="hud-corner hud-corner-tl"></div>
+      <div class="hud-corner hud-corner-br"></div>
+      <div class="hud-rec"><span class="rec-dot"></span>REC <span id="vnd-rec">00:00:00</span></div>
+      <div class="hud-vertical">Studio Veinard / Showreel 2026</div>
+
+      <div class="hero-copy">
+        <h1>On crée des vidéos<br>dont on <span class="accent">se souvient</span>.</h1>
+        <p>Studio de création visuelle, du concept à la livraison.</p>
+        <button class="btn-primary" data-go="contact">On s'y met ? →</button>
+      </div>
+    </div>
+
+    <button id="soundBtn" class="sound-btn">✕ Son off</button>
+  </section>
+
+  <!-- ===== STUDIO ===== -->
+  <section data-screen="studio" class="screen sub-screen">
+    <div class="kicker"><span class="kicker-num">02</span><span class="kicker-label">/ Studio</span></div>
+    <h2 class="sub-title">Le studio<img src="assets/rature.png" alt="" class="rature"></h2>
+    <div class="studio-grid">
+      <div class="studio-text">
+        <p>Studio Veinard, c'est un studio de création visuelle porté par une obsession : créer des vidéos dont on se souvient. Directeur artistique et créateur de contenus, je conçois et pilote chaque projet de A à Z, du concept à la livraison.</p>
+        <p>Six ans dans l'audiovisuel, des images vues des centaines de millions de fois pour différents types de projets : Jeux Olympiques, Roland-Garros, Eurovision, France Télévisions, GP Explorer, <span class="accent-strong">et bientôt le vôtre</span>. Du sport au divertissement, des grandes marques aux médias, je m'adapte à chaque univers pour en faire ressortir ce qui compte.</p>
+        <p>Pour les productions qui demandent plus de bras ou des expertises spécifiques, je m'appuie sur un réseau de talents, ce qui me permet de prendre en charge vos projets dans leur intégralité, quelle que soit leur ampleur.</p>
+      </div>
+      <div class="studio-stats">
+        <div class="stat-card"><div class="stat-num accent">6 ans</div><div class="stat-label">dans l'audiovisuel</div></div>
+        <div class="stat-card"><div class="stat-num">100M+</div><div class="stat-label">de vues cumulées</div></div>
+        <div class="stat-card"><div class="stat-num">A→Z</div><div class="stat-label">concept à livraison</div></div>
+      </div>
+    </div>
+
+    <div class="marquee-block">
+      <div class="marquee-heading">Ils m'ont fait confiance</div>
+      <div class="marquee-mask">
+        <div class="marquee-track">
+          <img src="uploads/JO.png" alt="JO 2024" class="mq-logo" style="max-height:52px;max-width:58px">
+          <img src="uploads/RolandGarros.png" alt="Roland-Garros" class="mq-logo" style="max-height:50px;max-width:56px">
+          <img src="uploads/Eurovision.png" alt="Eurovision" class="mq-logo" style="max-height:30px;max-width:150px">
+          <img src="uploads/TourDeFrance.png" alt="Tour de France" class="mq-logo" style="max-height:48px;max-width:66px">
+          <img src="uploads/FranceTV.png" alt="France Télévisions" class="mq-logo" style="max-height:28px;max-width:150px">
+          <img src="uploads/Gp.png" alt="GP Explorer" class="mq-logo" style="max-height:40px;max-width:98px">
+          <img src="uploads/Webedia.png" alt="Webedia" class="mq-logo" style="max-height:26px;max-width:150px">
+          <img src="uploads/Mediawan.png" alt="Mediawan" class="mq-logo" style="max-height:26px;max-width:150px">
+          <img src="uploads/Cupra.png" alt="Cupra" class="mq-logo" style="max-height:44px;max-width:82px">
+          <img src="uploads/CreditMutuel.png" alt="Crédit Mutuel" class="mq-logo" style="max-height:24px;max-width:155px">
+          <img src="uploads/RockEnSeine.png" alt="Rock en Seine" class="mq-logo" style="max-height:48px;max-width:60px">
+          <img src="uploads/WeLoveGreen.png" alt="We Love Green" class="mq-logo" style="max-height:42px;max-width:94px">
+          <img src="uploads/PGW.png" alt="Paris Games Week" class="mq-logo" style="max-height:50px;max-width:58px">
+          <img src="uploads/PlaneteRap.png" alt="Planète Rap" class="mq-logo" style="max-height:40px;max-width:92px">
+          <img src="uploads/Slash.png" alt="France tv Slash" class="mq-logo" style="max-height:50px;max-width:46px">
+          <img src="uploads/JO.png" alt="JO 2024" class="mq-logo" style="max-height:52px;max-width:58px">
+          <img src="uploads/RolandGarros.png" alt="Roland-Garros" class="mq-logo" style="max-height:50px;max-width:56px">
+          <img src="uploads/Eurovision.png" alt="Eurovision" class="mq-logo" style="max-height:30px;max-width:150px">
+          <img src="uploads/TourDeFrance.png" alt="Tour de France" class="mq-logo" style="max-height:48px;max-width:66px">
+          <img src="uploads/FranceTV.png" alt="France Télévisions" class="mq-logo" style="max-height:28px;max-width:150px">
+          <img src="uploads/Gp.png" alt="GP Explorer" class="mq-logo" style="max-height:40px;max-width:98px">
+          <img src="uploads/Webedia.png" alt="Webedia" class="mq-logo" style="max-height:26px;max-width:150px">
+          <img src="uploads/Mediawan.png" alt="Mediawan" class="mq-logo" style="max-height:26px;max-width:150px">
+          <img src="uploads/Cupra.png" alt="Cupra" class="mq-logo" style="max-height:44px;max-width:82px">
+          <img src="uploads/CreditMutuel.png" alt="Crédit Mutuel" class="mq-logo" style="max-height:24px;max-width:155px">
+          <img src="uploads/RockEnSeine.png" alt="Rock en Seine" class="mq-logo" style="max-height:48px;max-width:60px">
+          <img src="uploads/WeLoveGreen.png" alt="We Love Green" class="mq-logo" style="max-height:42px;max-width:94px">
+          <img src="uploads/PGW.png" alt="Paris Games Week" class="mq-logo" style="max-height:50px;max-width:58px">
+          <img src="uploads/PlaneteRap.png" alt="Planète Rap" class="mq-logo" style="max-height:40px;max-width:92px">
+          <img src="uploads/Slash.png" alt="France tv Slash" class="mq-logo" style="max-height:50px;max-width:46px">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section data-screen="services" class="screen sub-screen">
+    <div class="kicker"><span class="kicker-num">03</span><span class="kicker-label">/ Services</span></div>
+    <h2 class="sub-title sub-title-services">Ce qu'on fait<img src="assets/rature.png" alt="" class="rature"></h2>
+    <div class="services-wrap">
+      <div class="services-grid">
+        <div class="service-card"><div class="service-num">01</div><h3>Habillage TV & broadcast</h3><p>Chartes animées, plateaux, incrustations à la qualité antenne.</p></div>
+        <div class="service-card"><div class="service-num">02</div><h3>Génériques & bumpers</h3><p>Ouvertures, stings et transitions qui posent l'identité en deux secondes.</p></div>
+        <div class="service-card"><div class="service-num">03</div><h3>Identités animées</h3><p>Logos vivants et systèmes graphiques déclinables partout.</p></div>
+        <div class="service-card"><div class="service-num">04</div><h3>Direction artistique</h3><p>Cohérence visuelle et structure de marque, du concept à l'écran.</p></div>
+        <div class="service-card"><div class="service-num">05</div><h3>Montage</h3><p>Formats longs et courts, taillés pour la rétention.</p></div>
+        <div class="service-card"><div class="service-num">06</div><h3>Contenu social vertical</h3><p>Reels, TikTok, Shorts pensés pour performer.</p></div>
+        <div class="service-card"><div class="service-num">07</div><h3>Teasers & bandes-annonces</h3><p>Montages courts taillés pour créer l'attente.</p></div>
+        <div class="service-card"><div class="service-num">08</div><h3>Aftermovies</h3><p>Le souvenir d'un événement condensé en un film qui claque.</p></div>
+        <div class="service-card"><div class="service-num">09</div><h3>Vidéos publicitaires</h3><p>Des formats pensés pour convertir, pas juste pour être vus.</p></div>
+        <div class="service-card"><div class="service-num">10</div><h3>Packs de templates</h3><p>Des modèles réutilisables pour décliner ton contenu en autonomie.</p></div>
+        <div class="service-card"><div class="service-num">11</div><h3>Habillage streaming</h3><p>Overlays et transitions pour tes directs Twitch/YouTube.</p></div>
+        <div class="service-card"><div class="service-num">12</div><h3>Miniatures</h3><p>Des visuels qui donnent envie de cliquer, pensés pour le taux de clic.</p></div>
+      </div>
+      <div class="services-fade">
+        <p>Mais le plus simple, c'est de <button class="link-inline" data-go="contact">nous en parler</button>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section data-screen="contact" class="screen sub-screen">
+    <div class="kicker"><span class="kicker-num">04</span><span class="kicker-label">/ Contact</span></div>
+    <h2 class="sub-title sub-title-contact">On en parle ?<img src="assets/rature.png" alt="" class="rature rature-contact"></h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <a href="mailto:contact@veinard.pro" class="contact-item">
+          <div class="contact-label">Email</div>
+          <div class="contact-value">contact@veinard.pro</div>
+        </a>
+        <a href="tel:+33760101056" class="contact-item">
+          <div class="contact-label">Téléphone</div>
+          <div class="contact-value">+33 7 60 10 10 56</div>
+        </a>
+        <div>
+          <div class="contact-label">Réseaux</div>
+          <div class="social-row">
+            <a href="#" class="social-btn">Instagram ↗</a>
+            <a href="#" class="social-btn">Vimeo ↗</a>
+            <a href="#" class="social-btn">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <div id="sentPanel" class="sent-panel" hidden>
+          <div class="sent-title">Message envoyé ✶</div>
+          <p class="sent-text">Merci, je te réponds vite. On va faire quelque chose de marquant.</p>
+          <button id="resetBtn" class="reset-btn">Nouveau message</button>
+        </div>
+        <!-- TODO: replace REPLACE_ME with real Formspree endpoint -->
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/REPLACE_ME" method="POST">
+          <div class="form-heading">Mini-brief</div>
+          <input name="name" type="text" placeholder="Ton nom" required>
+          <input name="email" type="email" placeholder="Ton email" required>
+          <textarea name="message" placeholder="Ton projet en deux lignes" rows="4" required></textarea>
+          <button type="submit" class="btn-primary form-submit">Envoyer →</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <span>© 2026 Studio Veinard</span><span>Studio de création visuelle</span>
+    </div>
+  </section>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
