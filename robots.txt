@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://studioveinard.fr/sitemap.xml

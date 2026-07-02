@@ -6,6 +6,13 @@
   var wipe = document.getElementById('wipe');
   var wipeTimer = null;
 
+  var screenTitles = {
+    home: 'Studio Veinard — Création visuelle & motion design',
+    studio: 'Le studio — Studio Veinard',
+    services: 'Services — Studio Veinard',
+    contact: 'Contact — Studio Veinard'
+  };
+
   function showScreen(tab) {
     screens.forEach(function (s) {
       s.classList.toggle('active', s.dataset.screen === tab);
@@ -13,6 +20,7 @@
     navLinks.forEach(function (l) {
       l.classList.toggle('active', l.dataset.tab === tab);
     });
+    document.title = screenTitles[tab] || screenTitles.home;
     mobileMenu.hidden = true;
     turnSoundOff();
     playWipe();
@@ -107,4 +115,28 @@
     contactForm.hidden = false;
     sentPanel.hidden = true;
   });
+
+  // email assemblé côté client pour ne pas exposer l'adresse aux scrapers dans le HTML
+  var eUser = 'contact', eDomain = 'veinard' + '.pro';
+  var eAddr = eUser + '@' + eDomain;
+  var emailLink = document.getElementById('emailLink');
+  var emailValue = document.getElementById('emailValue');
+  emailLink.href = 'mailto:' + eAddr;
+  emailValue.textContent = eAddr;
+
+  var ld = document.createElement('script');
+  ld.type = 'application/ld+json';
+  ld.textContent = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'ProfessionalService',
+    name: 'Studio Veinard',
+    description: 'Studio de création visuelle — habillage TV, montage, identités animées, contenu social. Du concept à la livraison.',
+    url: 'https://studioveinard.fr/',
+    logo: 'https://studioveinard.fr/uploads/og-image.png',
+    image: 'https://studioveinard.fr/uploads/og-image.png',
+    email: eAddr,
+    founder: { '@type': 'Person', name: 'Marwane Barika' },
+    address: { '@type': 'PostalAddress', addressCountry: 'FR' }
+  });
+  document.head.appendChild(ld);
 })();

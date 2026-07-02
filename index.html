@@ -3,21 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Studio Veinard — Studio de création visuelle</title>
+<title>Studio Veinard — Création visuelle & motion design</title>
 <meta name="description" content="Studio de création visuelle — habillage TV, montage, identités animées, contenu social. Du concept à la livraison. JO, Roland-Garros, Eurovision, GP Explorer.">
+<link rel="canonical" href="https://studioveinard.fr/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://studioveinard.fr/">
-<meta property="og:title" content="Studio Veinard — Studio de création visuelle">
+<meta property="og:title" content="Studio Veinard — Création visuelle & motion design">
 <meta property="og:description" content="On crée des vidéos dont on se souvient. Habillage TV, montage, identités animées, du concept à la livraison.">
 <meta property="og:image" content="https://studioveinard.fr/uploads/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo Studio Veinard sur fond anthracite">
 <meta property="og:locale" content="fr_FR">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" type="image/png" href="uploads/LogoFullBlack.png">
-<link rel="apple-touch-icon" href="uploads/LogoFullBlack.png">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" href="uploads/LogoFullBlack.png" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#1a1a1a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Saira:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Anton&family=Saira:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Saira:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Anton&family=Saira:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="styles.css">
+<script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 <div id="root">
@@ -29,7 +39,7 @@
 
   <!-- ===== NAV ===== -->
   <nav id="nav">
-    <button class="logo-btn" data-go="home" aria-label="Studio Veinard — accueil"><img src="uploads/LogoFull.png" alt="Studio Veinard" class="logo-img"></button>
+    <button class="logo-btn" data-go="home" aria-label="Studio Veinard — accueil"><img src="uploads/LogoFull.webp" alt="Studio Veinard" class="logo-img" width="714" height="688"></button>
 
     <div class="nav-links" id="navLinksDesktop">
       <button class="nav-link" data-go="home" data-tab="home">
@@ -62,7 +72,7 @@
   <!-- ===== HOME ===== -->
   <section data-screen="home" class="screen">
     <div class="reel-wrap">
-      <iframe id="vnd-reel" title="Showreel Studio Veinard" src="https://player.vimeo.com/video/1205680422?autoplay=1&muted=1&loop=1&controls=0&title=0&byline=0&portrait=0&autopause=0&playsinline=1&badge=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" class="reel-iframe"></iframe>
+      <iframe id="vnd-reel" title="Showreel Studio Veinard" src="https://player.vimeo.com/video/1205680422?autoplay=1&muted=1&loop=1&controls=0&title=0&byline=0&portrait=0&autopause=0&playsinline=1&badge=0&dnt=1&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" class="reel-iframe"></iframe>
       <div class="scanline" id="scanline"></div>
       <div class="reel-vignette"></div>
     </div>
@@ -86,7 +96,7 @@
   <!-- ===== STUDIO ===== -->
   <section data-screen="studio" class="screen sub-screen">
     <div class="kicker"><span class="kicker-num">02</span><span class="kicker-label">/ Studio</span></div>
-    <h2 class="sub-title">Le studio<img src="assets/rature.png" alt="" class="rature"></h2>
+    <h2 class="sub-title">Le studio<img src="assets/rature.webp" alt="" loading="lazy" class="rature"></h2>
     <div class="studio-grid">
       <div class="studio-text">
         <p>Studio Veinard, c'est un studio de création visuelle porté par une obsession : <span class="accent-strong">créer des vidéos dont on se souvient</span>. Directeur artistique et créateur de contenus, je conçois et pilote chaque projet de A à Z, du concept à la livraison.</p>
@@ -104,36 +114,36 @@
       <div class="marquee-heading">Ils m'ont fait confiance</div>
       <div class="marquee-mask">
         <div class="marquee-track">
-          <img src="uploads/JO.png" alt="JO 2024" class="mq-logo" style="max-height:52px;max-width:58px">
-          <img src="uploads/RolandGarros.png" alt="Roland-Garros" class="mq-logo" style="max-height:50px;max-width:56px">
-          <img src="uploads/Eurovision.png" alt="Eurovision" class="mq-logo" style="max-height:30px;max-width:150px">
-          <img src="uploads/TourDeFrance.png" alt="Tour de France" class="mq-logo" style="max-height:48px;max-width:66px">
-          <img src="uploads/FranceTV.png" alt="France Télévisions" class="mq-logo" style="max-height:28px;max-width:150px">
-          <img src="uploads/Gp.png" alt="GP Explorer" class="mq-logo" style="max-height:40px;max-width:98px">
-          <img src="uploads/Webedia.png" alt="Webedia" class="mq-logo" style="max-height:26px;max-width:150px">
-          <img src="uploads/Mediawan.png" alt="Mediawan" class="mq-logo" style="max-height:26px;max-width:150px">
-          <img src="uploads/Cupra.png" alt="Cupra" class="mq-logo" style="max-height:44px;max-width:82px">
-          <img src="uploads/CreditMutuel.png" alt="Crédit Mutuel" class="mq-logo" style="max-height:24px;max-width:155px">
-          <img src="uploads/RockEnSeine.png" alt="Rock en Seine" class="mq-logo" style="max-height:48px;max-width:60px">
-          <img src="uploads/WeLoveGreen.png" alt="We Love Green" class="mq-logo" style="max-height:42px;max-width:94px">
-          <img src="uploads/PGW.png" alt="Paris Games Week" class="mq-logo" style="max-height:50px;max-width:58px">
-          <img src="uploads/PlaneteRap.png" alt="Planète Rap" class="mq-logo" style="max-height:40px;max-width:92px">
-          <img src="uploads/Slash.png" alt="France tv Slash" class="mq-logo" style="max-height:50px;max-width:46px">
-          <img src="uploads/JO.png" alt="JO 2024" class="mq-logo" style="max-height:52px;max-width:58px">
-          <img src="uploads/RolandGarros.png" alt="Roland-Garros" class="mq-logo" style="max-height:50px;max-width:56px">
-          <img src="uploads/Eurovision.png" alt="Eurovision" class="mq-logo" style="max-height:30px;max-width:150px">
-          <img src="uploads/TourDeFrance.png" alt="Tour de France" class="mq-logo" style="max-height:48px;max-width:66px">
-          <img src="uploads/FranceTV.png" alt="France Télévisions" class="mq-logo" style="max-height:28px;max-width:150px">
-          <img src="uploads/Gp.png" alt="GP Explorer" class="mq-logo" style="max-height:40px;max-width:98px">
-          <img src="uploads/Webedia.png" alt="Webedia" class="mq-logo" style="max-height:26px;max-width:150px">
-          <img src="uploads/Mediawan.png" alt="Mediawan" class="mq-logo" style="max-height:26px;max-width:150px">
-          <img src="uploads/Cupra.png" alt="Cupra" class="mq-logo" style="max-height:44px;max-width:82px">
-          <img src="uploads/CreditMutuel.png" alt="Crédit Mutuel" class="mq-logo" style="max-height:24px;max-width:155px">
-          <img src="uploads/RockEnSeine.png" alt="Rock en Seine" class="mq-logo" style="max-height:48px;max-width:60px">
-          <img src="uploads/WeLoveGreen.png" alt="We Love Green" class="mq-logo" style="max-height:42px;max-width:94px">
-          <img src="uploads/PGW.png" alt="Paris Games Week" class="mq-logo" style="max-height:50px;max-width:58px">
-          <img src="uploads/PlaneteRap.png" alt="Planète Rap" class="mq-logo" style="max-height:40px;max-width:92px">
-          <img src="uploads/Slash.png" alt="France tv Slash" class="mq-logo" style="max-height:50px;max-width:46px">
+          <img src="uploads/JO.webp" alt="JO 2024" class="mq-logo" style="max-height:52px;max-width:58px" width="320" height="368" loading="lazy" decoding="async">
+          <img src="uploads/RolandGarros.webp" alt="Roland-Garros" class="mq-logo" style="max-height:50px;max-width:56px" width="380" height="380" loading="lazy" decoding="async">
+          <img src="uploads/Eurovision.webp" alt="Eurovision" class="mq-logo" style="max-height:30px;max-width:150px" width="392" height="91" loading="lazy" decoding="async">
+          <img src="uploads/TourDeFrance.webp" alt="Tour de France" class="mq-logo" style="max-height:48px;max-width:66px" width="364" height="308" loading="lazy" decoding="async">
+          <img src="uploads/FranceTV.webp" alt="France Télévisions" class="mq-logo" style="max-height:28px;max-width:150px" width="400" height="70" loading="lazy" decoding="async">
+          <img src="uploads/Gp.webp" alt="GP Explorer" class="mq-logo" style="max-height:40px;max-width:98px" width="395" height="172" loading="lazy" decoding="async">
+          <img src="uploads/Webedia.webp" alt="Webedia" class="mq-logo" style="max-height:26px;max-width:150px" width="400" height="75" loading="lazy" decoding="async">
+          <img src="uploads/Mediawan.webp" alt="Mediawan" class="mq-logo" style="max-height:26px;max-width:150px" width="400" height="75" loading="lazy" decoding="async">
+          <img src="uploads/Cupra.webp" alt="Cupra" class="mq-logo" style="max-height:44px;max-width:82px" width="375" height="245" loading="lazy" decoding="async">
+          <img src="uploads/CreditMutuel.webp" alt="Crédit Mutuel" class="mq-logo" style="max-height:24px;max-width:155px" width="388" height="56" loading="lazy" decoding="async">
+          <img src="uploads/RockEnSeine.webp" alt="Rock en Seine" class="mq-logo" style="max-height:48px;max-width:60px" width="306" height="276" loading="lazy" decoding="async">
+          <img src="uploads/WeLoveGreen.webp" alt="We Love Green" class="mq-logo" style="max-height:42px;max-width:94px" width="394" height="204" loading="lazy" decoding="async">
+          <img src="uploads/PGW.webp" alt="Paris Games Week" class="mq-logo" style="max-height:50px;max-width:58px" width="370" height="370" loading="lazy" decoding="async">
+          <img src="uploads/PlaneteRap.webp" alt="Planète Rap" class="mq-logo" style="max-height:40px;max-width:92px" width="375" height="177" loading="lazy" decoding="async">
+          <img src="uploads/Slash.webp" alt="France tv Slash" class="mq-logo" style="max-height:50px;max-width:46px" width="255" height="335" loading="lazy" decoding="async">
+          <img src="uploads/JO.webp" alt="JO 2024" class="mq-logo" style="max-height:52px;max-width:58px" width="320" height="368" loading="lazy" decoding="async">
+          <img src="uploads/RolandGarros.webp" alt="Roland-Garros" class="mq-logo" style="max-height:50px;max-width:56px" width="380" height="380" loading="lazy" decoding="async">
+          <img src="uploads/Eurovision.webp" alt="Eurovision" class="mq-logo" style="max-height:30px;max-width:150px" width="392" height="91" loading="lazy" decoding="async">
+          <img src="uploads/TourDeFrance.webp" alt="Tour de France" class="mq-logo" style="max-height:48px;max-width:66px" width="364" height="308" loading="lazy" decoding="async">
+          <img src="uploads/FranceTV.webp" alt="France Télévisions" class="mq-logo" style="max-height:28px;max-width:150px" width="400" height="70" loading="lazy" decoding="async">
+          <img src="uploads/Gp.webp" alt="GP Explorer" class="mq-logo" style="max-height:40px;max-width:98px" width="395" height="172" loading="lazy" decoding="async">
+          <img src="uploads/Webedia.webp" alt="Webedia" class="mq-logo" style="max-height:26px;max-width:150px" width="400" height="75" loading="lazy" decoding="async">
+          <img src="uploads/Mediawan.webp" alt="Mediawan" class="mq-logo" style="max-height:26px;max-width:150px" width="400" height="75" loading="lazy" decoding="async">
+          <img src="uploads/Cupra.webp" alt="Cupra" class="mq-logo" style="max-height:44px;max-width:82px" width="375" height="245" loading="lazy" decoding="async">
+          <img src="uploads/CreditMutuel.webp" alt="Crédit Mutuel" class="mq-logo" style="max-height:24px;max-width:155px" width="388" height="56" loading="lazy" decoding="async">
+          <img src="uploads/RockEnSeine.webp" alt="Rock en Seine" class="mq-logo" style="max-height:48px;max-width:60px" width="306" height="276" loading="lazy" decoding="async">
+          <img src="uploads/WeLoveGreen.webp" alt="We Love Green" class="mq-logo" style="max-height:42px;max-width:94px" width="394" height="204" loading="lazy" decoding="async">
+          <img src="uploads/PGW.webp" alt="Paris Games Week" class="mq-logo" style="max-height:50px;max-width:58px" width="370" height="370" loading="lazy" decoding="async">
+          <img src="uploads/PlaneteRap.webp" alt="Planète Rap" class="mq-logo" style="max-height:40px;max-width:92px" width="375" height="177" loading="lazy" decoding="async">
+          <img src="uploads/Slash.webp" alt="France tv Slash" class="mq-logo" style="max-height:50px;max-width:46px" width="255" height="335" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
@@ -142,7 +152,7 @@
   <!-- ===== SERVICES ===== -->
   <section data-screen="services" class="screen sub-screen">
     <div class="kicker"><span class="kicker-num">03</span><span class="kicker-label">/ Services</span></div>
-    <h2 class="sub-title sub-title-services">Ce qu'on fait<img src="assets/rature.png" alt="" class="rature"></h2>
+    <h2 class="sub-title sub-title-services">Ce qu'on fait<img src="assets/rature.webp" alt="" loading="lazy" class="rature"></h2>
     <div class="services-wrap">
       <div class="services-grid">
         <div class="service-card"><div class="service-num">01</div><h3>Habillage TV & broadcast</h3><p>Chartes animées, plateaux, incrustations.</p></div>
@@ -167,12 +177,12 @@
   <!-- ===== CONTACT ===== -->
   <section data-screen="contact" class="screen sub-screen">
     <div class="kicker"><span class="kicker-num">04</span><span class="kicker-label">/ Contact</span></div>
-    <h2 class="sub-title sub-title-contact">On en parle ?<img src="assets/rature.png" alt="" class="rature rature-contact"></h2>
+    <h2 class="sub-title sub-title-contact">On en parle ?<img src="assets/rature.webp" alt="" loading="lazy" class="rature rature-contact"></h2>
     <div class="contact-grid">
       <div class="contact-info">
-        <a href="mailto:contact@veinard.pro" class="contact-item">
+        <a href="#" id="emailLink" class="contact-item" aria-label="Envoyer un email à Studio Veinard">
           <div class="contact-label">Email</div>
-          <div class="contact-value">contact@veinard.pro</div>
+          <div class="contact-value" id="emailValue">contact [at] veinard.pro</div>
         </a>
         <a href="tel:+33760101056" class="contact-item">
           <div class="contact-label">Téléphone</div>
@@ -187,19 +197,19 @@
         </div>
         <form id="contactForm" class="contact-form" action="https://formspree.io/f/meebrqlq" method="POST">
           <div class="form-heading">Mini-brief</div>
-          <input name="name" type="text" placeholder="Ton nom" required>
-          <input name="email" type="email" placeholder="Ton email" required>
-          <input name="phone" type="tel" placeholder="Ton téléphone (facultatif)">
-          <textarea name="message" placeholder="Ton projet en quelques lignes" rows="4" required></textarea>
+          <input name="name" type="text" placeholder="Ton nom" aria-label="Ton nom" autocomplete="name" required>
+          <input name="email" type="email" placeholder="Ton email" aria-label="Ton email" autocomplete="email" required>
+          <input name="phone" type="tel" placeholder="Ton téléphone (facultatif)" aria-label="Ton téléphone (facultatif)" autocomplete="tel">
+          <textarea name="message" placeholder="Ton projet en quelques lignes" aria-label="Ton projet en quelques lignes" rows="4" required></textarea>
           <button type="submit" class="btn-primary form-submit">Envoyer →</button>
-          <p id="formError" class="form-error" hidden>Un souci est survenu, réessaie ou écris directement à contact@veinard.pro.</p>
+          <p id="formError" class="form-error" hidden>Un souci est survenu, réessaie ou écris-nous directement (email ci-contre).</p>
         </form>
       </div>
     </div>
 
-    <div class="footer-bar">
-      <span>© 2026 Studio Veinard</span><span>Studio de création visuelle</span>
-    </div>
+    <footer class="footer-bar">
+      <span>© 2026 Studio Veinard</span><a href="/mentions-legales" class="footer-link">Mentions légales</a><span>Studio de création visuelle</span>
+    </footer>
   </section>
 
 </div>
