@@ -132,8 +132,8 @@
     name: 'Studio Veinard',
     description: 'Studio de création visuelle — habillage TV, montage, identités animées, contenu social. Du concept à la livraison.',
     url: 'https://studioveinard.fr/',
-    logo: 'https://studioveinard.fr/uploads/og-image.png',
-    image: 'https://studioveinard.fr/uploads/og-image.png',
+    logo: 'https://studioveinard.fr/uploads/og-image-v2.png',
+    image: 'https://studioveinard.fr/uploads/og-image-v2.png',
     email: eAddr,
     founder: { '@type': 'Person', name: 'Marwane Barika' },
     address: { '@type': 'PostalAddress', addressCountry: 'FR' }
