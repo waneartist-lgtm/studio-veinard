@@ -7,10 +7,10 @@
   var wipeTimer = null;
 
   var screenTitles = {
-    home: 'Studio Veinard — Création visuelle & motion design',
-    studio: 'Le studio — Studio Veinard',
-    services: 'Services — Studio Veinard',
-    contact: 'Contact — Studio Veinard'
+    home: 'Studio Veinard | Création visuelle & motion design',
+    studio: 'Le studio | Studio Veinard',
+    services: 'Services | Studio Veinard',
+    contact: 'Contact | Studio Veinard'
   };
 
   function showScreen(tab) {
